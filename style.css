@@ -1,0 +1,155 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #504f4f;
+}
+
+header {
+    background-color: #030303;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+img {
+    max-width: 75%;
+    height: 60;
+}
+
+
+/* Основні стилі, які застосовуються для десктопів */
+
+/* Медіа-запити для планшетів */
+@media (max-width: 768px) {
+    header, footer {
+        text-align: left;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+}
+
+/* Медіа-запити для мобільних телефонів */
+@media (max-width: 480px) {
+    header, footer {
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 0;
+    }
+
+    main {
+        padding: 5px;
+    }
+}
+
+
+/* style.css */
+.menu-icon {
+    display: none;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Медіа-запит для мобільних пристроїв */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .menu-icon img {
+        width: 30px;
+        height: auto;
+    }
+
+    .menu.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        width: 200px;
+    }
+
+    .menu.active li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu.active li:last-child {
+        border-bottom: none;
+    }
+}
+
+footer {
+    background-color: #4e4e4e;
+    color: rgb(12, 12, 12);
+    padding: 20px;
+    text-align: center;
+}
+footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+footer a:hover {
+    text-decoration: underline;
+}

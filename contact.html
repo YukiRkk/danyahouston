@@ -1,0 +1,51 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Контакти</title>
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+<body>
+    <!-- Ваша навігація та шапка -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="services.html">Послуги</a></li>
+                <li><a href="contact.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>Контакти</h1>
+        <p>Контактна інформація та форма для зв'язку.</p>
+        <!-- Форма зв'язку -->
+        <form action="submit_form.php" method="post">
+            <input type="text" name="name" placeholder="Ваше ім'я" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <textarea name="message" placeholder="Ваше повідомлення" required></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+    </main>
+    <!-- Ваш футер -->
+    <footer>
+        <p>© 2024 Компания. Все права защищены.</p>
+        <p>
+            <a href="about.html">О нас</a> |
+            <a href="services.html">Услуги</a> |
+            <a href="contact.html">Контакты</a> |
+        </p>
+        <p>
+            Следуйте за нами:
+            <a href="https://facebook.com" target="_blank">Facebook</a>,
+            <a href="https://twitter.com" target="_blank">Twitter</a>,
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
+
+</body>
+</html>
